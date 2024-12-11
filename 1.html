@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDTAI eShop</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #0073e6;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      padding: 1rem;
+      width: 200px;
+      height: 350px; /* Fiksna visina za stabilan raspored */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product img {
+      width: 200px; /* Fiksna širina slike */
+      height: 200px; /* Fiksna visina slike */
+      object-fit: cover; /* Prilagoditi sliku unutar fiksnih dimenzija */
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 0.8rem 0;
+      font-size: 1.4rem;
+      color: #0073e6;
+    }
+
+    .product p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .product button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #005bb5;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    .footer p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: #0073e6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>EDTAI eShop</h1>
+    <p>Your One-Stop Shop for AI-Driven Solutions</p>
+  </div>
+  <div class="products">
+    <div class="product">
+      <img src="1.jpg" alt="Product 1">
+      <h3>AI Tumor Detector</h3>
+      <p>$1200.00</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="2.jpg" alt="Product 2">
+      <h3>Smart MRI Analyzer</h3>
+      <p>$950.00</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="3.jpg" alt="Product 3">
+      <h3>Diagnostic Assistant Pro</h3>
+      <p>$1500.00</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="4.jpg" alt="Product 4">
+      <h3>Health Monitoring AI</h3>
+      <p>$700.00</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="5.jpg" alt="Product 5">
+      <h3>Data Insights Tool</h3>
+      <p>$500.00</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 EDTAI eShop. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:support@edtai.com">support@edtai.com</a></p>
+    <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">LinkedIn</a></p>
+  </div>
+</body>
+</html>
